@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "217dd87d-2ee3-48dc-b603-5ca378caa6b4",
+		"name": "lattice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Patient register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "age",
+						"value": "8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/home/splitunknown/Firefox_wallpaper.png"
+						},
+						{
+							"key": "ID",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "Name",
+							"value": "loagn",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "india Maharastar",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "bc@abc.ca",
+							"type": "text"
+						},
+						{
+							"key": "PhoneNumber",
+							"value": "919999999999",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "Aa1Aa1Aa",
+							"type": "text"
+						},
+						{
+							"key": "P_ID",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "Patient register"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\":526, \"Name\":\"dajkfhskjdfgasd\", \"Address\":\"aaaaaaaaa\", \"Email\":\"aaaaaaaaa\", \"PhoneNumber\":123456789555, \"Password\":\"passwdffgg\",\n     \"P_ID\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "psychiatristOfPatients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"P_ID\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Paychiatrist/show",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Paychiatrist",
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "countPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
